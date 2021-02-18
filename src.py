@@ -24,4 +24,7 @@ data = json.loads(json_data)
 print("Price from Sportcheck: ",data['price'])    
 
 #class Nordstrom: Use Selenium
+
 driver = webdriver.Chrome()
+#driver = webdriver.Firefox(executable_path='/home/pi/Documents/GitRepo/webscrapping-repo/geckodriver')
+driver.get(nordstrom_url)
